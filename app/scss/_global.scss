@@ -1,5 +1,7 @@
 body {
    height: 100vh;
+   @extend %DMSans-Medium-500;
+   color: $default;
 }
 /* =============================*/
 .lock{
@@ -12,13 +14,17 @@ body {
 }
 .main{
    flex-grow: 1;
-   // padding-top: 100px;
+   padding-top: 98px;
    z-index: 0;
 }
 .container{
-   // width: 1470px;
+   max-width: 1630px;
    padding: 0 15px;
    margin: 0 auto;
+}
+.box-wrapper{
+   padding: 0 210px;
+   // z-index: 1000;
 }
 a{
    text-decoration: none;

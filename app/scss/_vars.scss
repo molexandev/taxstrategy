@@ -1,34 +1,40 @@
-$default: #1B3764;
+$default: #171717;
 $hover: #4d7ecc;
-$accent: #FFCA42;
-$text-color: #B4C7E7;
-$textwhite: #F6F8FC;
-$textgray: #969AA0;
+$accent: #35B984;
+$accent-2: #FC2F2F;
+$hover: #FF9533;
+$background-block: #EEE;
 
 %btn {
-   @extend %cardo-400;
+   @extend %Bebas-Neue-700;
    background-color: $accent;
-   font-size: 19px;
-   line-height: 28px;
-   letter-spacing: 0.57px;
+   font-size: 24px;
+   line-height: 100%;
    text-transform: capitalize;
-   color: $default;
+   color: #fff;
    border: none;
    cursor: pointer;
    transition: all .2s;
-
    &:hover {
-      color: $accent;
+      color: $default;
       background-color: $hover;
    }
 }
 
-%cardo-400 {
-   font-family: 'Cardo-Regular', sans-serif;
+%Bebas-Neue-700 {
+   font-family: 'Bebas-Neue', sans-serif;
+   font-weight: 700;
+}
+%DMSans-Regular-400 {
+   font-family: 'DMSans-Regular', sans-serif;
    font-weight: 400;
 }
-
-%inter-400 {
-   font-family: 'Inter-Regular', sans-serif;
-   font-weight: 400;
+%DMSans-Bold-700 {
+   font-family: 'DMSans-Bold', sans-serif;
+   font-weight: 700;
+}
+//   =====
+%DMSans-Medium-500 {
+   font-family: 'DMSans-Medium', sans-serif;
+   font-weight: 500;
 }
