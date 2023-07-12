@@ -85,7 +85,7 @@
       background-position: top center;
       background-color: #171717;
       height: 100%;
-      z-index: -50;
+      z-index: 0;
    }
    &__overlay {
       position: absolute;
@@ -105,9 +105,21 @@
       color: #fff;
       padding-top: 93px;
       margin-bottom: 9px;
+      position: relative;
+      &::after{
+         content: '';
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         width: 150px;
+         height: 14px;
+         background-image: url(../images/src/top-title-decor.svg);
+      }
    }
    &__title-decore {
       background-color: $hover;
+      padding: 0 10px;
+      margin-left: 10px;
    }
    &__subtitle {
       @extend %Bebas-Neue-700;
@@ -116,14 +128,35 @@
       color: #fff;
       margin-bottom: 70px;
    }
+   &__box{
+      position: relative;
+   }
    &__inner {
-      display: grid;
+      display: inline-grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
+      padding-bottom: 76px;
    }
    &__item {
       background-color: #fff;
       padding: 28px 20px 0 68px;
+      position: relative;
+   }
+   &__item-num{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 48px;
+      height: 48px;
+      background-color: $hover;
+      color: #fff;
+      text-align: center;
+      font-size: 32px;
+      line-height: 100%;
+      @extend %Bebas-Neue-700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
    &__item-title {
       color: $hover;
@@ -148,6 +181,109 @@
       display: block;
       position: relative;
       &:hover{
+         color: $hover; 
+      }
+      &::after{
+         content: '';
+         position: absolute;
+         width: 24px;
+         height: 24px;
+         left: 94px;
+         background-image: url(../images/src/top-link-img.svg);
+      }
+   }
+   &__info {
+      display: inline-block;
+      position: absolute;
+      bottom: 96px;
+      right: 239px;
+      max-width: 321px;
+      color: #fff;
+   }
+   &__info-text {
+      text-align: center;
+      max-width: 321px;
+      margin-bottom: 30px;
+   }
+   &__item-decore {
+      color: $accent;
+   }
+   &__indo-btn {
+      width: 224px;
+      height: 60px;
+      @extend %btn;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+   }
+   &__info-warth {
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 9px;
+   }
+   &__info-warth-svg {
+      width: 24px;
+      height: 24px;
+      path{
+         fill: #f00;
+      }
+   }
+}
+
+//   ======= BE-AWARE   =======
+.be-aware {
+   padding-top: 100px;
+   &__title {
+      text-align: center;
+      font-size: 48px;
+      line-height: 120%;
+      text-transform: uppercase;
+      @extend %Bebas-Neue-700;
+      margin-bottom: 40px;
+   }
+   &__inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20px;
+   }
+   &__item {
+      box-shadow: 0px 5px 10px 0px rgba(133, 133, 133, 0.20);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 50px;
+      padding: 0 27px;
+      max-height: 334px;
+   }
+   &__logo {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto;
+      margin-bottom: 22px;
+   }
+   &__logo-svg {
+      width: 64px;
+      height: 64px;
+   }
+   &__text {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 22px;
+      @extend %DMSans-Regular-400;
+      line-height: 150%;
+   }
+   &__link {
+      font-size: 16px;
+      line-height: 150%;
+      color: $accent;
+      margin: 37px auto;
+      transition: all .2s;
+      position: relative;
+      &:hover{
          color: $hover;
       }
       &::after{
@@ -156,32 +292,23 @@
          width: 24px;
          height: 24px;
          left: 94px;
-         background-image: url(../images/src/top-link-img.svg)
+         background-image: url(../images/src/top-link-img.svg);
       }
-   }
-   &__info {
-   }
-   &__info-text {
-   }
-   &__itemdecore {
-   }
-   &__indo-btn {
-   }
-   &__info-warth {
    }
 }
 
 
 
 
-// .top__background-img{
-//    position: absolute;
-//    top: 0;
-//    left: 0;
-//    right: 0;
-//    height: 546px;
-//    width: 100%;
-// }
+
+
+
+
+
+
+
+
+
 
 
 
