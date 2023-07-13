@@ -116,7 +116,7 @@
          background-image: url(../images/src/top-title-decor.svg);
       }
    }
-   &__title-decore {
+   &__title-decor {
       background-color: $hover;
       padding: 0 10px;
       margin-left: 10px;
@@ -205,7 +205,7 @@
       max-width: 321px;
       margin-bottom: 30px;
    }
-   &__item-decore {
+   &__item-decor {
       color: $accent;
    }
    &__indo-btn {
@@ -296,6 +296,409 @@
       }
    }
 }
+
+//   ======   TRUST   =======
+.trust {
+   &__wrapper{
+      position: relative;
+      padding: 0px 0 56px 0;
+      text-align: center;
+      margin-bottom: 100px;
+   }
+   &__background-img {
+      background-color: $background-block;
+      position: absolute;
+      background-image: url(../images/map-trust.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      height: 100%;
+      width: 100%;
+      opacity: 0.2;
+      z-index: -10;
+   }
+   &__background-overlay{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $background-block;
+      z-index: -200;
+   }
+   &__title {
+      padding-top: 100px;
+      @extend %Bebas-Neue-700;
+      color: $accent;
+      font-size: 48px;
+      line-height: 120%;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+   }
+   &__title-decor {
+      color: $default;
+      padding-left: 8px;
+   }
+   &__text {
+      max-width: 648px;
+      font-size: 22px;
+      line-height: 150%;
+      @extend %DMSans-Regular-400;
+      margin: 0 auto;
+      margin-bottom: 56px;
+   }
+   &__decor-1 {
+      color: $accent;
+      padding-left: 8px;
+      padding-right: 8px;
+   }
+   &__decor-2 {
+      color: $accent-2;
+      padding-left: 8px;
+      padding-right: 8px;
+   }
+   &__btn {
+      width: 224px;
+      height: 60px;
+      @extend %btn;
+      margin-bottom: 115px;
+   }
+}
+
+//   =======   REDUCE   =======
+.reduce {
+   &__background {
+      position: absolute;
+      z-index: -100;
+   }
+   &__box-wrapper{
+      position: relative;
+      
+      margin-bottom: 100px;
+   }
+   &__top {
+      padding-top: 104px;
+      text-align: center;
+   }
+   &__title {
+      @extend %Bebas-Neue-700;
+      font-size: 48px;
+      color: #fff;
+      max-width: 965px;
+      line-height: 120%;
+      text-transform: uppercase;
+      margin: 0 auto;
+      margin-bottom: 50px;
+   }
+   &__title-decor {
+      background-color: $accent;
+      padding: 0 8px;
+      margin: 0 8px;
+   }
+   &__text {
+      text-align: center;
+      @extend %DMSans-Regular-400;
+      font-size: 20px;
+      color: #fff;
+      line-height: 150%;
+      max-width: 408px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+   }
+   &__info {
+      background-color: #fff;
+      text-align: center;
+      padding-top: 50px;  
+   }
+   &__info-title {
+      @extend %Bebas-Neue-700;
+      font-size: 36px;
+      line-height: 120%;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+   }
+   &__items {
+      display: flex;      
+      column-gap: 30px;
+      padding: 0 30px;
+      // height: auto;
+   }
+   &__item {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 25%;
+   }
+   &__item-img {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+   }
+   &__img {
+      width: 64px;
+      height: 64px;
+   }
+   &__item-text {
+      font-size: 20px;
+      @extend %DMSans-Regular-400;
+      line-height: 150%;
+      margin-bottom: 20px;
+      flex: 1 1 auto;
+   }
+   &__link {
+      font-size: 16px;
+      line-height: 150%;
+      color: $accent;
+      margin: 0px auto;
+      transition: all .2s;
+      position: relative;
+      &:hover{
+         color: $hover;
+      }
+      &::after{
+         content: '';
+         position: absolute;
+         width: 24px;
+         height: 24px;
+         left: 94px;
+         background-image: url(../images/src/top-link-img.svg);
+      }
+   }
+}
+
+// =======   INCORPORATING   =======
+.incorporating {
+   &__wrapper{
+      position: relative;
+      margin-bottom: 100px;
+   }
+   &__background {
+      background-color: $background-block;
+      position: absolute;
+      top: 0;
+      left: 210px;
+      width: 780px;
+      height: 727px;
+      z-index: -200;
+   }
+   &__background-img {
+      width: 249px;
+      height: 691px;
+      position: absolute;
+      bottom: 0;
+      left: 42%;
+      z-index: -100;
+   }
+   &__background-svg {
+      width: 249px;
+      height: 691px;
+   }
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__info {
+      padding: 89px 0 72px 50px;
+   }
+   &__title {
+      @extend %Bebas-Neue-700;
+      font-size: 48px;
+      max-width: 429px;
+      margin-bottom: 20px;
+      line-height: 120%; /* 57.6px */
+      text-transform: uppercase;
+   }
+   &__text {
+      @extend %DMSans-Regular-400;
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 20px;
+      max-width: 578px;
+      width: 100%;
+   }
+   &__text + .incorporating__text{
+      margin-bottom: 30px;
+   }
+   &__contacts {
+      font-size: 20px;
+      color: $accent;
+      line-height: 150%;
+      max-width: 470px;
+      width: 100%;
+   }
+   &__contacts + .incorporating__contacts{
+      margin-bottom: 30px;
+   }
+   &__contacts-decor {
+      color: $default;
+   }
+   &__link {
+      transition: all .2s;
+      color: $default;
+      &:hover{
+         color: $hover;
+      }
+   }
+   &__btn {
+      cursor: pointer;
+      display: flex;
+      width: 180px;
+      height: 48px;
+      padding: 17px 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+      @extend %Bebas-Neue-700;
+      font-size: 24px;
+      line-height: 100%;
+      color: #fff;
+      background-color: $default;
+      border: none;
+      transition: all .2s;
+      &:hover{
+         color: $default;
+         background-color: $hover;
+      }
+   }
+   &__warning {
+      padding: 30px;
+      padding-left: 51px;
+      padding-right: 38px;
+      background-color: #fff;
+      box-shadow: 0px 10px 40px 0px rgba(133, 133, 133, 0.40);
+   }
+   &__img-box {
+      margin-bottom: 30px;
+   }
+   &__img {
+      width: 64px;
+      height: 64px;
+   }
+   &__warning-text {
+      max-width: 381px;
+      @extend %Bebas-Neue-700;
+      font-size: 28px;
+      line-height: 120%;
+      max-width: 391px;
+      margin-bottom: 40px;
+   }
+   &__warning-text + .incorporating__warning-text{
+      margin-bottom: 10px;
+   }
+   &__warning-decor {
+      color: $accent-2;
+   }
+}
+
+//   =======   TAX   =======
+.tax {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+   }
+   &__title {
+      font-size: 48px;
+      @extend %Bebas-Neue-700;
+      line-height: 120%;
+      text-transform: uppercase;
+   }
+   &__title-decor {
+      display: inline-block;
+      padding: 0 7px;
+      margin-bottom: 45px;
+      @extend %Bebas-Neue-700;
+      font-size: 48px;
+      color: #fff;
+      background-color: $accent;
+      line-height: 120%;
+      text-transform: uppercase;
+   }
+   &__text {
+      max-width: 550px;
+      @extend %DMSans-Regular-400;
+      font-size: 16px;
+      line-height: 150%; 
+      margin-bottom: 50px;
+   }
+   &__profit {
+      font-size: 20px;
+      line-height: 150%;
+      color: $accent;
+      max-width: 448px;
+      margin-bottom: 30px;
+   }
+   &__profit-decore {
+      color: $default;
+   }
+   &__subtitle{
+      text-align: center;
+      font-size: 15px;
+      line-height: 150%;
+      margin-bottom: 31px;
+   }
+   &__img-box {
+      margin-bottom: 15px;
+   }
+   &__img {
+      object-fit: cover;
+      max-width: 565px;
+      max-height: 265px;
+   }
+   &__diagram-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+      font-size: 11px;
+      margin-bottom: 11px;
+   }
+   &__diagram-info-item1 {
+      color: $accent;
+      padding-left: 20px;
+      position: relative;
+      &::before{
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 2px;
+         width: 10px;
+         height: 10px;
+         background-color: $accent;
+      }
+   }
+   &__diagram-info-item2 {
+      color: $hover;
+      padding-left: 20px;
+      position: relative;
+      &::before{
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 2px;
+         width: 10px;
+         height: 10px;
+         background-color: $hover;
+      }
+   }
+   &__you-save {
+      text-align: center;
+      @extend %DMSans-Bold-700;
+      font-size: 15px;
+      line-height: 150%;
+      text-transform: uppercase;
+   }
+}
+
+
+
+
+
+
+
+
 
 
 
