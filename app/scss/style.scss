@@ -692,11 +692,303 @@
    }
 }
 
+//   =======   CALCULATE   =======
+.calculate {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $accent;
+      padding: 37px 66px 41px 50px;
+   }
+   &__title {
+      @extend %Bebas-Neue-700;
+      font-size: 36px;
+      line-height: 120%;
+      text-transform: uppercase;
+   }
+   &__calculator {
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+   }
+   &__filter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+   }
+   &__text {
+      text-align: center;
+      font-size: 15px;
+      color: #fff;
+      line-height: 150%; 
+   }
+   &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+   }
+   &__input-wrapp{
+      position: relative;
+      margin-left: 32px;
+   }
+   &__input-num-box{
+      position: absolute;
+      font-size: 11px;
+      width: 21px;
+      height: 14px;
+      top: 17px;
+      left: 15px;
+      font-size: 11px;
+      color: #fff;
+      z-index: 1000;
+   }
+   &__input-num {
+      width: 161px;
+      height: 48px;
+      flex-shrink: 0;
+      background-color: #1FA56F;
+      border: none;
+      outline: none;
+      padding-left: 55px;
+      line-height: 150%;
+      color: #fff;
+      position: relative;
+      font-size: 20px;
+      line-height: 150%;
+   }
+   &__info {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+   }
+   &__text-top{
+      padding-top: 10px;
+      margin-right: 32px;  
+   }
+   &__text-bottom {
+      max-width: 136px;
+      text-align: left;
+      margin-right: 89px;
+   }
+   &__input-wrapp-2{
+      position: relative;
+   }
+   &__input-num-box-2{
+      position: absolute;
+      font-size: 14px;
+      width: 26px;
+      height: 18px;
+      top: 22px;
+      left: 0%;
+      color: #fff;
+      z-index: 1000;
+   }
+   &__input-num-2 {
+      width: 236px;
+      height: 60px;
+      padding-left: 42px;
+      font-size: 40px;
+      color: #fff;
+      border: none;
+      outline: none;
+      background-color: inherit;
+   }
+}
+.irs--big .irs-min, .irs--big .irs-max {
+   background-color: transparent;
+   font-size: 11px;
+   color: #fff;
+   top: 7px;
+   visibility: visible!important;
+   &::before{
+      content: '€';
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      left: -5px;
+   }
+}
+.irs--big .irs-line {
+   width: 331px;
+   height: 4px;
+   opacity: 0.4;
+   border: none;
+   border-radius: 12px;
+ }
+ .irs--big .irs-bar{
+   height: 4px;
+   background-color: #fff;
+   border: none;
+   background: #fff;
+ }
+.irs-single{
+   display: none;
+}
+.irs--big .irs-handle {
+   top: 25px;
+   width: 24px;
+   height: 24px;
+   border: 4px solid #fff;
+   background: none;
+   background-color: $accent;
+   box-shadow: none;
+   &:hover{
+      background: inherit;
+      background-color: $accent;
+      border: 4px solid #fff;
+      cursor: pointer;
+   }
+ }
+ .irs--big .irs-handle.state_hover {
+   border: 4px solid #fff;
+   background: none;
+   background-color: $accent;
+   box-shadow: none;
+ }
 
+//   ======= BOOK A CALL   =======
+.book-a-call {
+   &__inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 48px;
+      padding-top: 50px;
+      margin-bottom: 100px;
+   }
+   &__img-box {
+      width: 90px;
+      height: 90px;
+   }
+   &__img {
+      width: 90px;
+      height: 90px;
+   }
+   &__text {
+      text-align: center;
+      font-size: 16px;
+      line-height: 100%;
+   }
+   &__btn {
+      padding: 12px 44px;
+      background-color: $default;
+      cursor: pointer;
+      border: none;
+      @extend %Bebas-Neue-700;
+      color: #fff;
+      font-size: 24px;
+      line-height: 100%;
+      transition: all .2s;
+      &:hover{
+         color: $default;
+         background-color: $hover;
+      }
+   }
+}
 
-
-
-
+//   =======   SLIDER   =======
+.box-wrapper-slider{
+   background-color: $background-block;
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+.clients-stories {
+   &__title {
+      @extend %Bebas-Neue-700;
+      font-size: 48px;
+      line-height: 120%;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+   }
+   // &__inner {
+   // }
+   &__slider {
+      margin-bottom: 30px;
+   }
+   &__slider-item {
+      padding: 0px 40px 40px 0px;
+   }
+   &__slider-item-wrapp{
+      display: flex;
+      justify-content: space-between;
+   }
+   &__slider-person {
+      text-align: center;
+      display: inline-block;
+   }
+   &__slider-img-box {
+      width: 180px;
+      height: 180px;
+      margin-bottom: 20px; 
+      display: inline-block;
+   }
+   &__slider-img {
+      width: 180px;
+      height: 180px;
+      display: inline-block;
+   }
+   &__slider-name {
+      color: $accent;
+      font-size: 24px;
+      line-height: 120%;
+      margin-bottom: 10px;
+   }
+   &__slider-lock {
+      @extend %DMSans-Regular-400;
+      font-size: 16px;
+      line-height: 120%; 
+   }
+   &__slider-info{
+      max-width: 880px;
+      background-color: #fff;
+      box-shadow: 0px 10px 40px 0px rgba(133, 133, 133, 0.40);
+      padding: 44px 100px 84px 100px;
+   }
+   &__slider-box-svg {
+      width: 40px;
+      height: 32px;
+      margin-bottom: 33px;
+   }
+   &__slider-svg {
+      width: 40px;
+      height: 32px;
+   }
+   &__slider-text {
+      @extend %DMSans-Regular-400;
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 20px;
+   }
+   &__slider-text-decor {
+      font-size: 20px;
+      font-style: normal;
+      line-height: 150%;
+      color: $accent;
+   }
+   &__rating {
+   }
+   &__rating-top {
+   }
+   &__rating-title-wrap {
+   }
+   &__rating-title {
+   }
+   &__rating-text {
+   }
+   &__rating-btn {
+   }
+   &__rating-bottom {
+   }
+   &__rating-bottom-item {
+   }
+   &__rating-bottom-subtitle {
+   }
+   &__rating-bottom-text {
+   }
+}
 
 
 
