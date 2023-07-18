@@ -49,10 +49,10 @@ $(function () {
     $(".clients-stories__slider").slick({
       dots: true,
       arrows: true,
-      speed: 3000,
+      speed: 500,
       fade: true,
       autoplay: true,
-      autoplaySpeed: 100,
+      autoplaySpeed: 2000,
       draggable: true,
   });
 
