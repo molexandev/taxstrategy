@@ -56,6 +56,19 @@ $(function () {
       draggable: true,
   });
 
+    $(".our-team__slider").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        arrows: true,
+        speed: 3000,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        draggable: true,
+    });
+
+
 
     $(".rating-1").rateYo({
       starWidth: "22px",
@@ -70,6 +83,11 @@ $(function () {
       ratedFill: "#C8B178",
       rating: 5,
       spacing: "3px"
+    });
+
+    $(".faq__item-title").on("click", function () {
+        $(this).toggleClass("faq__item-title--active");
+        $(this).next().slideToggle();
     });
 
 });
