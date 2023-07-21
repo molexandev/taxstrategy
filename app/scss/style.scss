@@ -106,6 +106,7 @@
       padding-top: 93px;
       margin-bottom: 9px;
       position: relative;
+      animation-duration: 1.5s;
       &::after{
          content: '';
          position: absolute;
@@ -127,6 +128,8 @@
       line-height: 100%;
       color: #fff;
       margin-bottom: 70px;
+      animation-delay: .5s;
+      animation-duration: 1.5s;
    }
    &__box{
       position: relative;
@@ -136,6 +139,8 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       padding-bottom: 76px;
+      animation-delay: 1s;
+      animation-duration: 1.5s;
    }
    &__item {
       background-color: #fff;
@@ -242,6 +247,7 @@
       text-transform: uppercase;
       @extend %Bebas-Neue-700;
       margin-bottom: 40px;
+      animation-duration: 1.5s;
    }
    &__inner {
       display: grid;
@@ -334,6 +340,7 @@
       line-height: 120%;
       text-transform: uppercase;
       margin-bottom: 40px;
+      animation-duration: 1.5s;
    }
    &__title-decor {
       color: $default;
@@ -346,6 +353,8 @@
       @extend %DMSans-Regular-400;
       margin: 0 auto;
       margin-bottom: 56px;
+      animation-delay: .5s;
+      animation-duration: 1.5s;
    }
    &__decor-1 {
       color: $accent;
@@ -362,6 +371,8 @@
       height: 60px;
       @extend %btn;
       margin-bottom: 115px;
+      animation-delay: 1s;
+      animation-duration: 1.5s;
    }
 }
 
@@ -389,6 +400,7 @@
       text-transform: uppercase;
       margin: 0 auto;
       margin-bottom: 50px;
+      animation-duration: 1.5s;
    }
    &__title-decor {
       background-color: $accent;
@@ -404,6 +416,8 @@
       max-width: 408px;
       margin: 0 auto;
       margin-bottom: 60px;
+      animation-duration: 1.5s;
+      animation-delay: .5s;
    }
    &__info {
       background-color: #fff;
@@ -416,12 +430,14 @@
       line-height: 120%;
       text-transform: uppercase;
       margin-bottom: 50px;
+      animation-duration: 1.5s;
    }
    &__items {
       display: flex;      
       column-gap: 30px;
       padding: 0 30px;
-      // height: auto;
+      animation-duration: 1.5;
+      animation-delay: .5s;
    }
    &__item {
       display: flex;
@@ -508,6 +524,7 @@
       margin-bottom: 20px;
       line-height: 120%; /* 57.6px */
       text-transform: uppercase;
+      animation-duration: 1.5s;
    }
    &__text {
       @extend %DMSans-Regular-400;
@@ -516,6 +533,8 @@
       margin-bottom: 20px;
       max-width: 578px;
       width: 100%;
+      animation-duration: 1.5s;
+      animation-delay: .5s;
    }
    &__text + .incorporating__text{
       margin-bottom: 30px;
@@ -526,6 +545,8 @@
       line-height: 150%;
       max-width: 470px;
       width: 100%;
+      animation-duration: 1.5;
+      animation-delay: 1s;
    }
    &__contacts + .incorporating__contacts{
       margin-bottom: 30px;
@@ -557,6 +578,8 @@
       background-color: $default;
       border: none;
       transition: all .2s;
+      animation-duration: 1.5s;
+      animation-delay: 1.5s;
       &:hover{
          color: $default;
          background-color: $hover;
@@ -567,6 +590,8 @@
       padding-left: 51px;
       padding-right: 38px;
       background-color: #fff;
+      animation-duration: 1.5s;
+      animation-delay: 1s;
       box-shadow: 0px 10px 40px 0px rgba(133, 133, 133, 0.40);
    }
    &__img-box {
@@ -604,6 +629,7 @@
       @extend %Bebas-Neue-700;
       line-height: 120%;
       text-transform: uppercase;
+      animation-duration: 1.5s;
    }
    &__title-decor {
       display: inline-block;
@@ -615,6 +641,8 @@
       background-color: $accent;
       line-height: 120%;
       text-transform: uppercase;
+      animation-duration: 1.5s;
+      animation-delay: .5s;
    }
    &__text {
       max-width: 550px;
@@ -622,6 +650,8 @@
       font-size: 16px;
       line-height: 150%; 
       margin-bottom: 50px;
+      animation-duration: 1.5s;
+      animation-delay: 1s;
    }
    &__profit {
       font-size: 20px;
@@ -629,9 +659,15 @@
       color: $accent;
       max-width: 448px;
       margin-bottom: 30px;
+      animation-duration: 1.5s;
+      animation-delay: 1.5s;
    }
    &__profit-decore {
       color: $default;
+   }
+   &__diagram{
+      animation-duration: 1.5s;
+      animation-delay: 1s;
    }
    &__subtitle{
       text-align: center;
@@ -1109,12 +1145,15 @@
       line-height: 120%;
       text-transform: uppercase;
       margin-bottom: 50px;
+      animation-duration: 1.5s;
    }
    &__text {
       font-size: 20px;
       @extend %DMSans-Regular-400;
       line-height: 150%;
       margin-bottom: 50px;
+      animation-duration: 1.5s;
+      animation-delay: .5s;
    }
    &__text-decore {
       color: $accent;
@@ -1124,6 +1163,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      animation-duration: 1.5s;
+      animation-delay: 1s;
    }
    &__img {
       width: 815px;
@@ -1192,6 +1233,42 @@
       line-height: 150%;
       margin-left: 20px;
    }
+   &__before-item-1{
+      animation-delay: .2s;
+   }
+   &__before-item-2{
+      animation-delay: .4s;
+   }
+   &__before-item-3{
+      animation-delay: .6s;
+   }
+   &__before-item-4{
+      animation-delay: .8s;
+   }
+   &__before-item-5{
+      animation-delay: 1s;
+   }
+   &__after-item-1{
+      animation-delay: .2s;
+   }
+   &__after-item-2{
+      animation-delay: .2s;
+   }
+   &__after-item-3{
+      animation-delay: .4s;
+   }
+   &__after-item-4{
+      animation-delay: .6s;
+   }
+   &__after-item-5{
+      animation-delay: .8s;
+   }
+   &__after-item-6{
+      animation-delay: 1s;
+   }
+   &__after-item-7{
+      animation-delay: 1.2s;
+   }
 }
 
 //   =======   NETWORK   =======
@@ -1207,6 +1284,7 @@
       background-image: url(../images/network-img.webp);
       background-position: bottom center;
       z-index: -100;
+      animation-duration: 2s;
    }
    &__wrapper {
       display: grid;
@@ -1220,6 +1298,8 @@
       margin-top: -30px;
       background-color: #fff;
       z-index: 100;
+      animation-duration: 1.5s;
+      animation-delay: .5s;
       box-shadow: 0px 5px 10px 0px rgba(133, 133, 133, 0.20);
    }
    &__subtitle {
@@ -1246,6 +1326,7 @@
       column-gap: 80px;
       row-gap: 60px;
       margin-bottom: 75px;
+      animation-duration: 1.5s;
    }
 }
 
@@ -1351,6 +1432,7 @@
       padding-top: 9px;
       padding-left: 84px;
       position: relative;
+      animation-duration: 1.5s;
       &::before{
          content: '';
          position: absolute;
@@ -1505,6 +1587,7 @@
       line-height: 120%;
       text-transform: uppercase;
       margin-bottom: 50px;
+      animation-duration: 1.5s;
    }
    &__wrapper {
       display: flex;
@@ -1517,10 +1600,11 @@
       line-height: 150%;
       margin-bottom: 30px;
       max-width: 580px;
+      animation-duration: 1.5s;
+      animation-delay: .5s;
    }
    &__text:last-child{
       margin-bottom: 42px;
-      // padding-bottom: 8px;
    }
    &__text-decor {
       color:#35B984;
@@ -1648,43 +1732,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //   =======   FOOTER   =======
 .footer {
    background-color: $background-block;
@@ -1765,8 +1812,5 @@
    height: 63px;
    padding: 20px 0;
 }
-
-
-
 
 @import 'media';
