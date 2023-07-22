@@ -69,6 +69,28 @@ $(function () {
     });
 
 
+    $(window).on('load resize', function() {
+        if ($(window).width() < 651) {
+            $(".top__inner").slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false,
+                speed: 1500,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                draggable: true,
+                fade: true
+            });
+        } else {
+          $(".top__inner").slick("unslick");
+        }
+      });
+
+
+
+
 
     $(".rating-1").rateYo({
       starWidth: "22px",
