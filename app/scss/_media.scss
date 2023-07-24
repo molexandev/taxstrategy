@@ -16,6 +16,14 @@
          left: 50px;
       }
    }
+   .clients-stories{
+      &__title{
+         padding-top: 50px;
+      }
+      .slick-dots{
+         left: 43%;
+      }
+   }
 }
 @media (max-width: 1400px){
    .header{
@@ -29,6 +37,16 @@
    .top{
       &__info{
          right: 5%;
+      }
+   }
+   .before-after{
+      &__before-item{
+         max-width: 560px;
+         padding-right: 20px;
+      }
+      &__after-item{
+         max-width: 560px;
+         padding-right: 20px;            
       }
    }
 }
@@ -83,6 +101,41 @@
    .calculate{
       &__title{
          padding-right: 15px;
+      }
+   }
+   .clients-stories{
+      &__slider-person{
+         margin-right: 50px;
+      }
+   }
+   .before-after{
+      &__wrapper{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         row-gap: 20px;
+      }
+      &__before{
+         width: 100%;
+      }
+      &__after{
+         width: 100%;
+      }
+      &__before-item{
+         max-width: 100%;
+         width: 100%;
+         padding-right: 20px;
+      }
+      &__after-item{
+         max-width: 100%;
+         width: 100%;
+         padding-right: 20px;            
+      }
+
+   }
+   .about{
+      &__wrapper{
+         column-gap: 40px;
       }
    }
 }
@@ -146,16 +199,27 @@
          font-size: 18px;
       }
    }
+   .trust{
+      &__wrapper{
+         margin-bottom: 30px;
+         padding-bottom: 0;
+      }
+   }
    .reduce{
+      &__background{
+         left: 15px;
+         right: 15px;
+      }
       &__top{
-         padding-top: 15px;
+         padding: 15px;
       }
       &__title{
          font-size: 30px;  
-         margin-bottom: 40px;
+         margin-bottom: 20px;
       }
       &__text{
          font-size: 16px;
+         margin-bottom: 0;
       }
       &__info{
          padding-top: 20px;
@@ -220,11 +284,142 @@
          padding-right: 0;
       }
    }
+   .clients-stories{
+      &__title{
+         font-size: 36px;
+      }
+      &__inner{
+         padding-bottom: 40px;
+      }
+      &__slider-info{
+         padding: 20px 40px 80px;
+      }
+      .slick-arrow{
+         width: 40px;
+         height: 40px;
+      }
+      &__rating{
+         margin-left: 40px;
+         margin-bottom: 40px;
+         padding: 30px 45px;
+      }
+      &__rating-title{
+         font-size: 20px;
+      }
+      &__rating-text-wrapp{
+         margin-right: 20px;  
+      }
+      &__rating-btn{
+         width: 130px;
+         font-size: 14px;
+         padding: 17px 10px;
+      }
+      &__rating-text{
+         font-size: 12px;
+      }
+      &__rating-bottom-subtitle{
+         font-size: 16px;
+      }
+   }
+   .example{
+      &__wrapper{
+         padding: 30px 0;
+         margin-bottom: 20px; 
+      }
+      &__title{
+         font-size: 36px;
+         margin-bottom: 20px;
+      }
+      &__text{
+         font-size: 16px;
+         max-width: 500px;
+         margin: 0 auto;
+         line-height: 190%;
+      }
+   }
+   .advantages{
+      &__inner{
+         padding-left: 15px;
+      }
+   }
+   .faq{
+      &__background{
+         padding: 30px 15px;
+      }
+   }
+   .about{
+      &__background{
+         padding-top: 50px;
+      }
+      &__title{
+         padding-left: 20px;
+      }
+      &__wrapper{
+         column-gap: 20px;
+         padding: 0 20px;
+      }
+      &__text{
+         font-size: 16px;
+      }
+      &__numbers-text{
+         font-size: 20px;
+      }
+      &__numbers-text-decor{
+         font-size: 34px;
+      }
+   }
+   .about-book{
+      &__background{
+         padding: 30px 20px;
+      }
+      &__title{
+         font-size: 24px;
+      }
+      &__subtitle{
+         font-size: 16px;
+      }
+   }
+   .our-team{
+      &__wrapper{
+         margin-bottom: 50px;
+      }
+      &__slider{
+         padding: 0 50px;
+      }
+      &__img-box{
+         width: 170px;
+         height: 170px;
+         margin: 0 auto;
+         margin-bottom: 20px;
+      }
+      &__name{
+         font-size: 16px;
+      }
+      .slick-arrow{
+         width: 35px;
+         height: 35px;
+      }
+   }
+   .regulations{
+      &__title{
+         margin-bottom: 20px;
+      }
+      &__wrapper{
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: repeat(3, 1fr);
+         column-gap: 20px;
+         row-gap: 20px;
+         justify-items: center;
+         margin-bottom: 50px;
+      }
+   }
 }
-
 @media (max-width: 768px){
    .container{
       padding: 0 10px;
+   }
+   .main{
+      padding-top: 65px;
    }
    .header{
       &__wrapper{
@@ -247,7 +442,6 @@
       }
    }
    .top{
-
       &__title{
          font-size: 44px;
          padding-top: 70px;
@@ -296,6 +490,78 @@
       }
       &__title{
          font-size: 30px;
+      }
+   }
+   .clients-stories{
+      &__slider-item{
+         padding-right: 15px;
+      }
+      &__rating{
+         margin-right: 15px;
+         margin-left: 15px;
+      }
+   }
+   .network{
+      &__title{
+         font-size: 40px;
+      }
+      &__wrapper{
+         grid-template-columns: repeat(1, 1fr);
+         row-gap: 40px;
+      }
+      &__item{
+         padding: 30px 20px;
+      }
+   }
+   .advantages{
+      &__wrapper{
+         margin-bottom: 20px;
+      }
+      &__title{
+         font-size: 36px;
+         margin-bottom: 20px;
+      }
+      &__inner{
+         display: flex;
+         justify-content: start;
+         align-items: center;
+         flex-wrap: wrap;
+         // row-gap: 40px;
+      }
+      &__item{
+         padding-left: 60px;
+         padding-right: 15px;
+         padding-bottom: 15px;
+         &::before{
+            width: 45px;
+            height: 45px;
+         }
+      }
+   }
+   .faq{
+      &__text{
+         padding: 20px 15px;
+      }
+   }
+   .about{
+      &__wrapper{
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+      &__inner{
+         margin-bottom: 30px;
+      }
+      &__numbers{
+         margin-bottom: 20px;
+      }
+   }
+   .our-team{
+      &__img-box{
+         width: 150px;
+         height: 150px;
+      }
+      &__name{
+         min-height: 35px;
       }
    }
 }
@@ -412,6 +678,69 @@
          margin: 0 auto;
       }
    }
+   .clients-stories{
+      &__title{
+         font-size: 30px;
+      }
+      &__slider-item-wrapp{
+         display: block;
+         text-align: center;
+      }
+      &__slider-item{
+         padding: 0 15px;
+      }
+      &__slider-person{
+         margin-right: 0;
+         margin-bottom: 30px;
+      }
+      .slick-dots{
+         left: 40%;
+         bottom: 30px;
+      }
+   }
+   .before-after{
+      &__wrapper{
+         margin-bottom: 30px;
+      }
+      &__before-text{
+         font-size: 14px;
+         line-height: 1.2;
+      }
+      &__after-text{
+         font-size: 14px;
+         line-height: 1.2;
+      }
+      &__before-img-box{
+         display: block;
+         min-width: 64px;
+      }
+      &__after-img-box{
+         display: block;
+         min-width: 64px;
+      }
+   }
+   .our-team{
+      &__slider{
+         padding: 0 15px;
+      }
+      &__img-box{
+         width: 120px;
+         height: 120px;
+         margin: 0 auto;
+         margin-bottom: 20px;
+      }
+      &__name{
+         font-size: 16px;
+      }
+      .slick-arrow{
+         display: none!important;
+      }
+   }
+   .partners{
+      &__wrapper{
+         margin-bottom: 30px;
+      }
+   }
 }
 @media (max-width: 550px){
    .header{
@@ -435,14 +764,99 @@
    }
    .reduce{
       &__background-img{
-         min-height: 300px;
+         min-height: 370px;
       }
       &__item{
          min-width: 70%;
       }
+      &__box-wrapper{
+         margin-bottom: 30px;
+      }
+   }
+   .clients-stories{
+      .slick-arrow{
+         display: none!important;
+      }
+      &__rating-top{
+         flex-wrap: wrap;
+         justify-content: center;
+         row-gap: 20px;
+      }
+      &__rating-title{
+         text-align: center;
+      }
+      &__rating-bottom{
+         flex-wrap: wrap;
+         justify-content: center;
+         row-gap: 20px;
+         column-gap: 20px;
+      }
+      &__slider-info{
+         padding: 30px 15px;
+         padding-bottom: 60px;
+      }
+      &__slider-text-decor{
+         font-size: 16px;
+      }
+   }
+   .free-consultation{
+      &__wrapper{
+         padding: 45px 15px;
+         margin-bottom: 30px;
+      }
+      &__bottom-box{
+         flex-wrap: wrap;
+         justify-content: center;
+         row-gap: 20px;
+      }
+   }
+   .faq{
+      &__title{
+         font-size: 36px;
+         margin-bottom: 20px;
+
+      }
+      &__item-title{
+         font-size: 20px;
+         padding-left: 65px;
+         padding-right: 10px;
+         padding-top: 17px;
+         &::before{
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+         }
+      }
+      &__text{
+         padding: 15px;
+      }
+      &__questions-title{
+         font-size: 16px;
+      }
+      &__questions-info{
+         flex-wrap: wrap;
+         justify-content: center;
+         row-gap: 20px;
+         margin-bottom: 20px;   
+      }
+      &__questions-linkbox:first-child{
+         border-right: none;
+         padding: 0;
+      }
+      &__questions-linkbox:last-child{
+         padding-left: 0;
+      }
+   }
+   .regulations{
+      &__wrapper{
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(6, 1fr);
+         column-gap: 30px;
+         row-gap: 30px;
+      }
    }
 }
-@media (max-width: 446px){
+@media (max-width: 446px){   
    .header{
       &__social-links{
          display: none;
@@ -469,12 +883,29 @@
       }
    }
    .top{
+      &__title{
+         font-size: 30px;
+         padding-top: 30px;
+         &::after{
+            width: 0;
+            height: 0;
+         }
+      }
       &__subtitle{
+         font-size: 30px;
          margin-bottom: 20px;
       }
       &__inner{
          padding: 0 15px;
          padding-bottom: 50px;
+      }
+      &__item{
+         padding-left: 40px;
+      }
+      &__item-num{
+         width: 30px;
+         height: 30px;
+         font-size: 22px;
       }
       &__info{
          padding-bottom: 20px;
@@ -497,6 +928,58 @@
    .reduce{
       &__items{
          grid-template-columns: repeat(1, 1fr);
+      }
+   }
+   .clients-stories{
+      &__title{
+         font-size: 22px;
+      }
+      &__rating{
+         padding: 20px 15px;
+      }
+      .slick-dots{
+         left: 33%;
+      }
+      &__rating-text-wrapp{
+         flex-wrap: wrap;
+         justify-content: center;
+         column-gap: 20px;
+         row-gap: 20px;
+      }
+   }
+   .partners{
+      &__wrapper{
+         display: grid;
+         justify-items: center;
+         grid-template-columns: repeat(2, 1fr);
+         row-gap: 20px;
+      }
+   }
+   .our-team{
+      &__title{
+         margin-bottom: 20px;
+         font-size: 26px;
+      }
+      &__wrapper{
+         padding-bottom: 70px;
+         margin-bottom: 20px;
+      }
+      &__slider{
+         padding: 0;
+      }
+      &__img-box{
+         width: 70px;
+         height: 70px;
+      }
+      &__name{
+         font-size: 12px;
+      }
+      &__position{
+         font-size: 12px;
+      }
+      .slick-arrow{
+         width: 35px;
+         height: 35px;
       }
    }
 }

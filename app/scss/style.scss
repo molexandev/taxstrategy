@@ -1432,6 +1432,7 @@
       padding-top: 9px;
       padding-left: 84px;
       position: relative;
+      padding-right: 40px;
       animation-duration: 1.5s;
       &::before{
          content: '';
@@ -1576,7 +1577,7 @@
    &__background {
       background-image: url(../images/about-background.avif);
       background-position: center center;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       padding-top: 100px;
    }
