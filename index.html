@@ -36,7 +36,7 @@
                      </svg>
                   </a>
                </div>
-               <button class="header__btn" type="submit">Free consultation</button>
+               <button class="header__btn" type="submit" data-fancybox data-src="#popup-content">Free consultation</button>
             </div>
          </div>
       </div>
@@ -97,7 +97,7 @@
                      to create wealth and the foundation of every
                      successful entrepreneur
                   </p>
-                  <button class="top__indo-btn" type="submit">Free consultation</button>
+                  <button class="top__indo-btn" type="submit" data-fancybox data-src="#popup-content">Free consultation</button>
                   <div class="top__info-warth">
                      <svg class="top__info-warth-svg">
                         <use xlink:href="images/sprite.svg#top-worth" width="24" height="24"></use>
@@ -112,9 +112,9 @@
    <section class="be-aware">
       <div class="container">
          <div class="box-wrapper">
-            <h3 class="be-aware__title wow animate__fadeIn" data-wow-offset="250">Be aware when you incorporate an offshore company:</h3>
+            <h3 class="be-aware__title wow animate__fadeIn" data-wow-offset="350">Be aware when you incorporate an offshore company:</h3>
             <div class="be-aware__inner">
-               <div class="be-aware__item wow animate__fadeInLeft" data-wow-offset="250">
+               <div class="be-aware__item wow animate__fadeInLeft" data-wow-offset="350">
                   <div class="be-aware__logo">
                      <svg class="be-aware__logo-svg">
                         <use xlink:href="images/sprite.svg#be-aware-1" width="64" height="64"></use>
@@ -124,7 +124,7 @@
                   </p>
                   <a class="be-aware__link" href="#">Learn more</a>
                </div>
-               <div class="be-aware__item wow animate__fadeIn" data-wow-offset="250">
+               <div class="be-aware__item wow animate__fadeIn" data-wow-offset="350">
                   <div class="be-aware__logo">
                      <svg class="be-aware__logo-svg">
                         <use xlink:href="images/sprite.svg#be-aware-2" width="64" height="64"></use>
@@ -134,7 +134,7 @@
                      does not result in a criminal offense.</p>
                   <a class="be-aware__link" href="#">Learn more</a>
                </div>
-               <div class="be-aware__item wow animate__fadeInRight" data-wow-offset="250">
+               <div class="be-aware__item wow animate__fadeInRight" data-wow-offset="350">
                   <div class="be-aware__logo">
                      <svg class="be-aware__logo-svg">
                         <use xlink:href="images/sprite.svg#be-aware-3" width="64" height="64"></use>
@@ -160,7 +160,7 @@
                      class="trust__decor-2">wrong</span>information.
                   It is difficult for an entrepreneur to distinguish between true and false. We are happy to help!
                </p>
-               <button class="trust__btn wow animate__fadeIn" data-wow-offset="250">book a free call</button>
+               <button class="trust__btn wow animate__fadeIn" data-wow-offset="250" data-fancybox data-src="#popup-content">book a free call</button>
             </div>
          </div>
       </div>
@@ -248,7 +248,7 @@
                   <p class="incorporating__contacts wow animate__fadeIn" data-wow-offset="250">Or call directly
                      <a class="incorporating__link" href="tel:+19292072233">+19292072233</a>(24/7)
                   </p>
-                  <button class="incorporating__btn wow animate__fadeIn" data-wow-offset="50" type="submit">book a call</button>
+                  <button class="incorporating__btn wow animate__fadeIn" data-wow-offset="50" type="submit" data-fancybox data-src="#popup-content">book a call</button>
                </div>
                <div class="incorporating__warning wow animate__fadeInRight" data-wow-offset="250">
                   <div class="incorporating__img-box">
@@ -332,7 +332,7 @@
                <img class="book-a-call__img" src="images/book-a-call-img.avif" alt="book-a-call image">
             </div>
             <p class="book-a-call__text">Book a free call on the Calendly:</p>
-            <button class="book-a-call__btn wow animate__fadeInRight" data-wow-offset="250" type="submit">book a call</button>
+            <button class="book-a-call__btn wow animate__fadeInRight" data-wow-offset="250" type="submit" data-fancybox data-src="#popup-content">book a call</button>
          </div>
       </div>
    </section>      
@@ -686,7 +686,7 @@
                   before we still offer a 15 minutes free consultation for every interested business owner.</p>
                <h6 class="free-consultation__subtitle">Book your free appointment now:</h6>
                <div class="free-consultation__bottom-box">
-                  <button class="free-consultation__btn" type="submit">book a free call</button>
+                  <button class="free-consultation__btn" type="submit" data-fancybox data-src="#popup-content">book a free call</button>
                   <p class="free-consultation__worth">Worth 500 USD</p>
                </div>
             </div>
@@ -817,7 +817,7 @@
                   <div class="about-book">
                      <h3 class="about-book__title wow animate__fadeIn" data-wow-offset="250">Now it´s time to get in touch with us</h3>
                      <h5 class="about-book__subtitle wow animate__fadeIn" data-wow-offset="250">Say no to high taxes and yes to more financial freedom!</h5>
-                     <button class="about-book__btn  wow animate__fadeIn" data-wow-offset="250">book a call</button>
+                     <button class="about-book__btn  wow animate__fadeIn" data-wow-offset="250" type="submit" data-fancybox data-src="#popup-content">book a call</button>
                   </div>
                </div>
             </div>
@@ -925,6 +925,17 @@
       </div>
    </section>
 </main>
+<section class="popup" id="popup-content">
+   <div class="popup__wrapper">
+      <form action="" class="popup__form">
+         <input class="popup__input-text" id="popup-name" type="text" placeholder="Name">
+         <input class="popup__input-text" id="popup-phone" type="text" placeholder="Phone">
+         <input class="popup__input-text" id="popup-phone" type="email" placeholder="Mail">
+         <textarea class="popup__textarea" placeholder="Your comment"></textarea>
+         <button class="popup__btn" type="submit">submit the form</button>
+      </form>
+   </div>
+</section>
 <footer class="footer">
    <div class="footer-top">
       <div class="container">
