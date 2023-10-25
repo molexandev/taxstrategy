@@ -741,6 +741,14 @@
          margin-bottom: 30px;
       }
    }
+   .popup{
+      &__input-text{
+         min-width: 350px;
+      }
+      &__textarea{
+         min-width: 350px;
+      }
+   }
 }
 @media (max-width: 550px){
    .header{
@@ -853,6 +861,14 @@
          grid-template-rows: repeat(6, 1fr);
          column-gap: 30px;
          row-gap: 30px;
+      }
+   }
+   .popup{
+      &__input-text{
+         min-width: 300px;
+      }
+      &__textarea{
+         min-width: 300px;
       }
    }
 }
@@ -980,6 +996,17 @@
       .slick-arrow{
          width: 35px;
          height: 35px;
+      }
+   }
+   .fancybox-content{
+      padding: 30px;
+   }
+   .popup{
+      &__input-text{
+         min-width: auto;
+      }
+      &__textarea{
+         min-width: auto;
       }
    }
 }

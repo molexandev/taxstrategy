@@ -1,4 +1,12 @@
 $(function () {
+
+    const popupMask = document.getElementById('popup-phone');
+    const maskOptions = {
+      mask: '+{38}(000)000-00-00'
+    };
+    const mask = IMask(popupMask, maskOptions);
+
+
    
     var $range = $(".calculate__input-filter"),
         $input = $(".calculate__input-num"),
@@ -87,10 +95,6 @@ $(function () {
           $(".top__inner").slick("unslick");
         }
       });
-
-
-
-
 
     $(".rating-1").rateYo({
       starWidth: "22px",

@@ -106,7 +106,7 @@
       padding-top: 93px;
       margin-bottom: 9px;
       position: relative;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       &::after{
          content: '';
          position: absolute;
@@ -129,7 +129,7 @@
       color: #fff;
       margin-bottom: 70px;
       animation-delay: .5s;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
    &__box{
       position: relative;
@@ -140,7 +140,7 @@
       gap: 20px;
       padding-bottom: 76px;
       animation-delay: 1s;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
    &__item {
       background-color: #fff;
@@ -187,14 +187,17 @@
       position: relative;
       &:hover{
          color: $hover; 
+         path{
+            transition: all .2s;
+            fill: $hover;
+         }
       }
-      &::after{
+      svg{
          content: '';
          position: absolute;
          width: 24px;
          height: 24px;
          left: 94px;
-         background-image: url(../images/src/top-link-img.svg);
       }
    }
    &__info {
@@ -247,7 +250,7 @@
       text-transform: uppercase;
       @extend %Bebas-Neue-700;
       margin-bottom: 40px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
    &__inner {
       display: grid;
@@ -291,14 +294,17 @@
       position: relative;
       &:hover{
          color: $hover;
+         path{
+            transition: all .2s;
+            fill: $hover;
+         }
       }
-      &::after{
+      svg{
          content: '';
          position: absolute;
          width: 24px;
          height: 24px;
-         left: 94px;
-         background-image: url(../images/src/top-link-img.svg);
+         left: 94px;       
       }
    }
 }
@@ -340,7 +346,7 @@
       line-height: 120%;
       text-transform: uppercase;
       margin-bottom: 40px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
    &__title-decor {
       color: $default;
@@ -354,7 +360,7 @@
       margin: 0 auto;
       margin-bottom: 56px;
       animation-delay: .5s;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
    &__decor-1 {
       color: $accent;
@@ -372,7 +378,7 @@
       @extend %btn;
       margin-bottom: 115px;
       animation-delay: 1s;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
 }
 
@@ -400,7 +406,7 @@
       text-transform: uppercase;
       margin: 0 auto;
       margin-bottom: 50px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
    &__title-decor {
       background-color: $accent;
@@ -416,7 +422,7 @@
       max-width: 408px;
       margin: 0 auto;
       margin-bottom: 60px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: .5s;
    }
    &__info {
@@ -430,7 +436,7 @@
       line-height: 120%;
       text-transform: uppercase;
       margin-bottom: 50px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
    &__items {
       display: flex;      
@@ -470,14 +476,17 @@
       position: relative;
       &:hover{
          color: $hover;
+         path{
+            transition: all .2s;
+            fill: $hover;
+         }
       }
-      &::after{
+      svg{
          content: '';
          position: absolute;
          width: 24px;
          height: 24px;
-         left: 94px;
-         background-image: url(../images/src/top-link-img.svg);
+         left: 94px;         
       }
    }
 }
@@ -524,7 +533,7 @@
       margin-bottom: 20px;
       line-height: 120%; /* 57.6px */
       text-transform: uppercase;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
    &__text {
       @extend %DMSans-Regular-400;
@@ -533,7 +542,7 @@
       margin-bottom: 20px;
       max-width: 578px;
       width: 100%;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: .5s;
    }
    &__text + .incorporating__text{
@@ -578,7 +587,7 @@
       background-color: $default;
       border: none;
       transition: all .2s;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: 1.5s;
       &:hover{
          color: $default;
@@ -590,7 +599,7 @@
       padding-left: 51px;
       padding-right: 38px;
       background-color: #fff;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: 1s;
       box-shadow: 0px 10px 40px 0px rgba(133, 133, 133, 0.40);
    }
@@ -629,7 +638,7 @@
       @extend %Bebas-Neue-700;
       line-height: 120%;
       text-transform: uppercase;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
    &__title-decor {
       display: inline-block;
@@ -641,7 +650,7 @@
       background-color: $accent;
       line-height: 120%;
       text-transform: uppercase;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: .5s;
    }
    &__text {
@@ -650,7 +659,7 @@
       font-size: 16px;
       line-height: 150%; 
       margin-bottom: 50px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: 1s;
    }
    &__profit {
@@ -659,14 +668,14 @@
       color: $accent;
       max-width: 448px;
       margin-bottom: 30px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: 1.5s;
    }
    &__profit-decore {
       color: $default;
    }
    &__diagram{
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: 1s;
    }
    &__subtitle{
@@ -882,6 +891,9 @@
 
 //   ======= BOOK A CALL   =======
 .book-a-call {
+   &__title{
+      display: none;
+   }
    &__inner {
       display: flex;
       justify-content: center;
@@ -1145,14 +1157,14 @@
       line-height: 120%;
       text-transform: uppercase;
       margin-bottom: 50px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
    &__text {
       font-size: 20px;
       @extend %DMSans-Regular-400;
       line-height: 150%;
       margin-bottom: 50px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: .5s;
    }
    &__text-decore {
@@ -1163,7 +1175,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: 1s;
    }
    &__img {
@@ -1298,7 +1310,7 @@
       margin-top: -30px;
       background-color: #fff;
       z-index: 100;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: .5s;
       box-shadow: 0px 5px 10px 0px rgba(133, 133, 133, 0.20);
    }
@@ -1318,6 +1330,9 @@
 
 //   =======   PARTNERS   =======
 .partners {
+   &__title{
+      display: none;
+   }
    &__wrapper {
       display: flex;
       justify-content: center;
@@ -1326,7 +1341,7 @@
       column-gap: 80px;
       row-gap: 60px;
       margin-bottom: 75px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
 }
 
@@ -1433,7 +1448,7 @@
       padding-left: 84px;
       position: relative;
       padding-right: 40px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       &::before{
          content: '';
          position: absolute;
@@ -1588,7 +1603,7 @@
       line-height: 120%;
       text-transform: uppercase;
       margin-bottom: 50px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
    }
    &__wrapper {
       display: flex;
@@ -1601,7 +1616,7 @@
       line-height: 150%;
       margin-bottom: 30px;
       max-width: 580px;
-      animation-duration: 1.5s;
+      animation-duration: .5s;
       animation-delay: .5s;
    }
    &__text:last-child{
@@ -1731,7 +1746,81 @@
    }
 }
 
-
+//   =======   POPUP   =======
+.popup {
+   display: none;
+   width: 100%;
+   &__wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+   &__title{
+      margin-bottom: 20px;
+      color: $accent;
+   }
+   &__form {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 800px;
+      width: 100%;
+   }
+   &__input-text {
+      display: block;
+      min-width: 450px;
+      max-width: 800px;
+      width: 100%;
+      height: 50px;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #858585;
+      border-radius: 5px;
+      color: $accent;
+      &::placeholder{
+         color: #858585;
+      }
+      &:focus-visible{
+         border: none;
+         outline: 1px solid $hover;
+         &::placeholder{
+            color: $hover;
+         }
+      }
+   }
+   &__textarea {
+      height: 150px;
+      min-width: 450px;
+      max-width: 800px;
+      width: 100%;
+      resize: none;
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #858585;
+      border-radius: 5px;
+      color: $accent;
+      &::placeholder{
+         color: #858585;
+      }
+      &:focus-visible{
+         border: none;
+         outline: 1px solid $hover;
+         &::placeholder{
+            color: $hover;
+         }
+      }      
+   }
+   &__btn {
+      display: block;
+      margin: 0 auto;
+      @extend %btn;
+      border-radius: 5px;
+      width: 180px;
+      height: 50px;
+   }
+}
 
 //   =======   FOOTER   =======
 .footer {
